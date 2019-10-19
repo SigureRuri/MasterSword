@@ -3,3 +3,10 @@ version: @version@
 main: com.github.sigureruri.mastersword.MasterSword
 api-version: 1.13
 authors: [SigureRuri]
+
+commands:
+  mastersword:
+    usage: /<command> help
+    permission: mastersword.command.mastersword
+    permission-message: You don't have <permission>
+    aliases: [sword]

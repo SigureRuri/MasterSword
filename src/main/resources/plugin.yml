@@ -1,0 +1,5 @@
+name: MasterSword
+version: @version@
+main: com.github.sigureruri.mastersword.MasterSword
+api-version: 1.13
+authors: [SigureRuri]

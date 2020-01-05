@@ -92,9 +92,9 @@ class MasterSwordListener : Listener {
                 val arrow = (player.world.spawnEntity(location, EntityType.ARROW) as Arrow).also { arrow ->
                     arrow.setGravity(false)
                     arrow.velocity = vector
-                    arrow.damage
                     arrow.isInvulnerable = true
                     arrow.damage = 10.0
+                    arrow.shooter = player
                 }
 
                 object : BukkitRunnable() {

@@ -10,7 +10,7 @@ import org.bukkit.entity.Player
 
 class GiveCommand : TabExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<out String>): Boolean {
-        val subCommand = if (args.isEmpty()) "" else args[1].toLowerCase()
+        val subCommand = if (args.size <= 1) "" else args[1].toLowerCase()
         when (args.size) {
             2 -> {
                 when (subCommand) {

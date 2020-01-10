@@ -20,8 +20,10 @@ object Items {
                     itemMeta.addEnchant(Enchantment.DAMAGE_ALL, 10, true)
                     itemMeta.addEnchant(Enchantment.DURABILITY, 5, true)
                     itemMeta.addAttributeModifier(Attribute.GENERIC_ATTACK_SPEED, AttributeModifier(UUID.randomUUID(), "generic.attackSpeed", 1.0, AttributeModifier.Operation.ADD_NUMBER, EquipmentSlot.HAND))
+                    itemMeta.setCustomModelData(19860222)
                     itemMeta.setDisplayName("${ChatColor.AQUA}${ChatColor.BOLD}Master Sword")
                 } else {
+                    itemMeta.setCustomModelData(19860221)
                     itemMeta.setDisplayName("${ChatColor.DARK_AQUA}${ChatColor.BOLD}Master Sword")
                 }
             }
